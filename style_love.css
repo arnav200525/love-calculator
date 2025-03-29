@@ -1,0 +1,28 @@
+body {
+    background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+    color: #fff;
+    text-align: center;
+    padding: 50px;
+    overflow: hidden;
+}
+input {
+    padding: 10px;
+    margin: 5px;
+    width: 200px;
+}
+button {
+    padding: 10px;
+    background-color: #ff5c5c;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #ff3c3c;
+}
+.result {
+    margin-top: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}

@@ -1,0 +1,37 @@
+<html>
+<head>
+    <title>Love Calculator</title>
+    <link rel="stylesheet" href="style_love.css">
+</head>
+<body>
+<center>
+    <h1>Love Calculator</h1>
+    <input type="text" id="name1" placeholder="Your Name">
+    <input type="text" id="name2" placeholder="Crush Name">
+    <br>
+    <button onclick="calculateLove()">Calculate your love babyy</button>
+    <p class="result" id="result"></p>
+    <script>
+        function calculateLove() {
+            var n1 = document.getElementById('name1').value;
+            var n2 = document.getElementById('name2').value;
+            //error handling
+            if (!n1 || !n2) {
+                alert("Please enter both names!");
+                return;
+            }
+            var Ascii = 0;
+            for (let char of n1) {
+                Ascii += char.charCodeAt(0);
+            }
+            for (let char of n2) {
+                Ascii += char.charCodeAt(0);
+            }
+            var finalScore = Ascii % 100;
+            finalScore = Math.min(100, Math.max(0, finalScore));
+            document.getElementById('result').innerText = `${n1} ♥ ${n2}: ${finalScore}%`;
+        }
+    </script>
+</center>
+</body>
+</html>
