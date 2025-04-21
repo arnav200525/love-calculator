@@ -1,6 +1,6 @@
 **Love Calculator**
 
-**Overview**
+
 A simple, web-based love compatibility calculator built using HTML, CSS, and JavaScript.
 This playful project calculates a compatibility score between two people based on the ASCII values of the characters in their names. It's meant for entertainment purposes and just for fun — don't take the results seriously!
 The Love Calculator is a fun project where users can enter their name and their crush's name to get a randomly determined "compatibility score" based on ASCII character values.
